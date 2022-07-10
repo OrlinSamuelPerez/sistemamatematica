@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.fondo-login{
+    background-color: #48E65B;
+    background-image: url("../public/img/fondo-login.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+}
+.login{
+    font-family: 'Nunito', sans-serif;          
+    width: 375px;
+    height: 350px;
+    text-align: center;
+    background: #FCDB89;
+    border-radius: 69px;
+    margin-left: auto;
+    margin-top: 80px;
+    margin-right: auto;
+    padding: 10px;
+    filter: drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.1))
+    
+
+}
+.login h1{
+    font-weight:900;
+    font-size: 40px;
+    color: #061436;
+}
+.login input{
+    background-color: transparent;
+    text-align: center;
+    width: 250px;
+    margin-bottom:30px;
+    border:3px solid;
+    height: 40px;
+    border-color: transparent transparent #061436 transparent;
+
+}
+.login input::placeholder{
+    font-size: 18px;
+    color: #061436;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;          
+
+}
+.login button{
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;   
+    font-weight:900;
+    border: none;
+    background-color: white;
+    border-radius: 63px;
+    cursor: pointer;
+    color: #061436;
+
+
+
+}
