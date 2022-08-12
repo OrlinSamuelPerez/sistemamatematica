@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Login from './Login';
 import { useState } from 'react';
 import { auth } from '../BD/Configuracion';
+import Nav from '../Components/Nav';
 function MyApp({ Component, pageProps }) {
   const [userName, setuserName] = useState(null);
    return (
@@ -22,7 +23,7 @@ function MyApp({ Component, pageProps }) {
        
       })}
       {userName ? (
-          <Component {...pageProps} />
+         <Nav><Component {...pageProps} /></Nav>
         ) : (
         <Login />
       )}

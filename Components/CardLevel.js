@@ -23,7 +23,6 @@ export default function CardLevel(props) {
   }
   useEffect(()=>{
     getData()
-    console.log(dataArray)
   },[])
   return (
     <>
@@ -33,7 +32,6 @@ export default function CardLevel(props) {
         }
       `}</style>
     {
-      dataArrayDescripcion.length != []?
       <Link href={"Nivel/"+props.id}>
         <a>
           <div className="cardLevel" >
@@ -43,12 +41,12 @@ export default function CardLevel(props) {
               </div>
               <div>
                   <h2>
-                      {dataArrayDescripcion[0].Nombre}
+                      {props.nombre}
                   </h2>
               </div>
         </div>
         </a>
-    </Link>:<h3>Cargando</h3> 
+    </Link>
     }
     </>
   )
